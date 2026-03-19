@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <style>
+        /* Estilo do Botão Principal */
+        .btn-intercambio {
+            font-family: 'Georgia', serif;
+            padding: 12px 25px;
+            background-color: transparent;
+            border: 1px solid #8fb8e3;
+            color: #8fb8e3;
+            cursor: pointer;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .btn-intercambio:hover {
+            background-color: #8fb8e3;
+            color: white;
+        }
+
+        /* Estilo da Janela (Modal) com a estética da imagem */
+        dialog {
+            border: none;
+            border-radius: 4px;
+            padding: 40px;
+            width: 90%;
+            max-width: 600px;
+            background-color: #ffffff;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* O Título azul "Research Front" */
+        dialog h1 {
+            font-family: 'Playfair Display', serif;
+            color: #8fb8e3; /* O azul claro da imagem */
+            font-size: 3rem;
+            margin: 0 0 20px 0;
+            font-weight: 400;
+        }
+
+        /* O texto da explicação */
+        dialog p {
+            font-family: 'Georgia', serif;
+            color: #1a1a1a;
+            line-height: 1.6;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        /* Fundo escurecido suave */
+        dialog::backdrop {
+            background-color: rgba(255, 255, 255, 0.8); /* Fundo branco levemente transparente */
+        }
+
+        .btn-fechar {
+            background: none;
+            border: none;
+            color: #999;
+            cursor: pointer;
+            text-decoration: underline;
+            font-family: 'Georgia', serif;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="btn-intercambio" id="abrirModal">READ MORE +</button>
+
+    <dialog id="meuModal">
+        <h1>Research Front</h1>
+        <p>
+            <strong>Por que escolhi falar sobre intercâmbio:</strong><br>
+            Assim como a nova teoria sobre vulcões mencionada na imagem, o intercâmbio revela o que acontece "abaixo da superfície" de uma cultura. Escolhi este tema para explorar como a imersão internacional transforma nossa visão de mundo...
+        </p>
+        <button class="btn-fechar" id="fecharModal">Fechar [x]</button>
+    </dialog>
+
+    <script>
+        const modal = document.querySelector("#meuModal");
+        const abrir = document.querySelector("#abrirModal");
+        const fechar = document.querySelector("#fecharModal");
+
+        abrir.onclick = () => modal.showModal();
+        fechar.onclick = () => modal.close();
+    </script>
+
+</body>
+</html>
+
+</body>
+</html>

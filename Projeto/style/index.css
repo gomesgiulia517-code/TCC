@@ -1,0 +1,160 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+  }
+  
+  
+  /* HERO - IMAGEM DE FUNDO */
+  
+  .hero{
+  height:100vh;
+  
+  background-image:url("../assets/background.jpg");
+  
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  }
+  
+  
+  /* TEXTO CENTRAL */
+  
+  .hero-content h1{
+  
+  font-size:90px;
+  color:#9bb4d6;
+  margin-bottom:30px;
+  
+  }
+  
+  
+  /* BOTÃO */
+  
+  .btn{
+  
+  background:#2f6ea3;
+  color:white;
+  
+  padding:15px 40px;
+  
+  text-decoration:none;
+  
+  border-radius:6px;
+  
+  font-size:18px;
+  
+  transition:0.3s;
+  
+  }
+  
+  
+  .btn:hover{
+  
+  background:#1d4f78;
+  
+  }
+  
+  
+  /* SEÇÃO DE BAIXO */
+  
+  .sobre{
+  
+  background:#eeeeee;
+  
+  padding:80px 20px;
+  
+  text-align:center;
+  
+  }
+  
+  
+  .sobre h2{
+  
+  font-size:32px;
+  margin-bottom:10px;
+  
+  }
+  
+  
+  .sobre p{
+  
+  font-size:18px;
+  color:#333;
+  
+  }
+  .navbar{
+    position:absolute;
+    top:0;
+    width:100%;
+    padding:20px 60px;
+    display:flex;
+    justify-content:flex-end;
+    }
+    
+    .menu a{
+    
+    color:white;
+    text-decoration:none;
+    
+    margin-left:40px;
+    
+    font-size:20px;
+    font-weight:600;
+    
+    letter-spacing:2px;
+    
+    transition:0.3s;
+    
+    }
+    
+    .menu a:hover{
+    
+    opacity:0.7;
+    
+    }.projeto {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px;
+      gap: 40px;
+    }
+    
+    .texto {
+      width: 50%;
+    }
+    
+    .texto h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    
+    .texto p {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    
+    .imagem {
+      width: 50%;
+    }
+    
+    .imagem img {
+      width: 100%;
+      border-radius: 15px;
+    }@media (max-width: 768px) {
+      .projeto {
+        flex-direction: column;
+      }
+    
+      .texto, .imagem {
+        width: 100%;
+      }
+    }.projeto {
+      flex-direction: row-reverse;
+    }
